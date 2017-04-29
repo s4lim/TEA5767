@@ -25,5 +25,5 @@ Arduino Library for the TEA5767 Radio Module
   
 ##How to connect the Module:
  - GND to GND
- - VCC to 5V (3.3V won't work!)
+ - VCC to 5V (3.3V might work!)
  - SDA and SCL depend on your board, check [Arduino-Wire](https://www.arduino.cc/en/Reference/Wire)
