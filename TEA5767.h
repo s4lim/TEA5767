@@ -28,6 +28,7 @@ public:
 	
 	bool setFrequency(float frequency);
 	void setMuted(bool muted);
+  	bool isMuted();
 	bool setSearch(bool up, int level);
 	void setStandby(bool stby);
 	void setStereoNC(bool snc);
