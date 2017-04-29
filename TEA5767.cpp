@@ -73,6 +73,9 @@ void TEA5767::setMuted(bool muted){
 	_muted = muted;	
 	send();
 }
+bool TEA5767::isMuted(){
+	return _muted;
+}
 bool TEA5767::setSearch(bool up, int level){
 	_up = up;
 	if(level < 1 || level > 3) return false;
