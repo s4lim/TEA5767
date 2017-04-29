@@ -5,13 +5,14 @@ Arduino Library for the TEA5767 Radio Module
  - short: init(short minlvl) //Initialize Bus and search for Stations
  - bool: setFrequency(float frequency) //Set Radio Frequency
  - void: setMuted(bool muted)          //Mute/Unmute Module
+ - bool: isMuted() // return wheter the radio is muted or not
  - ~~bool: setSearch(bool up, int level)~~ //Search for Stations <= Currently not working
  - void: setStandby(bool stby)         //Enable/Disable Standby Mode
  - void: setStereoNC(bool snc)         //Enable/Disable Stereo Noise Cancelling
  - float: getFrequency()   //Returns the current Radio Frequency
  - int:   getReady()       //Get current State (0=Nothing, 1=Found Station, 2=Reached Frequency Limit)
  - bool:  isStereo()       //Get if the Frequency support Stereo
- - short: getSignalLevel() //Get Signal Level (0-15)
+ - short: getSignalLevel() //Get Signal Level (0-10)
  - int findStations(short minlvl) //Search for available Stations
  - float nextStation()            //Go to next Station
  - short getStations()            //Get Number of Stations
